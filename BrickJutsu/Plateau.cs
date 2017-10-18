@@ -1,50 +1,50 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace BrickJutsu
 {
-    class Plateau
+    public partial class Plateau : MetroFramework.Forms.MetroForm
     {
-        #region ATTRIBUTS
-        string taille;
-        #endregion
-
-        #region CONSTRUCTEUR  
-        public Plateau(string uneTaille)
+        public Plateau()
         {
-            this.taille = uneTaille;
+            InitializeComponent();
         }
-        #endregion
 
-        #region ACCESSEURS 
-        public string Taille
+        private void button2_Click(object sender, EventArgs e)
         {
-            get
+            //Ligne et colonne du bouton 
+            Button b = sender as Button;
+            int c = tableLayoutPanel1.GetColumn(b);
+            int l = tableLayoutPanel1.GetRow(b);
+
+
+
+
+            //verif si bouton checked
+            int carteChoisie = -1;
+            int indice = -1;
+            foreach (RadioButton rdo in Main.Controls.OfType<RadioButton>())
             {
-                return taille;
+                indice++;
+                if (rdo.Checked)
+                {
+                    carteChoisie = indice;
+
+                    break;
+                }
             }
 
-            set
-            {
-                taille = value;
-            }
+            // RadioButton btn = (RadioButton)this.Controls.OfType<RadioButton>().Find("radioButton" + carteChoisie, false);
+            //b.Text = 
+            //MessageBox.Show();
         }
-        #endregion
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 }
