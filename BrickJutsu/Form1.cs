@@ -23,7 +23,7 @@ namespace BrickJutsu
 
         private void buttonVoirLesCartes_Click(object sender, EventArgs e)
         {
-            Collection maCollection = new Collection("Seb", DateTime.Now);
+            Collection maCollection = new Collection("Seb");
 
 
             String url = "http://localhost/ninjago/public/api"; //là c'est l'adresse de l'api qu'on veut chopper
@@ -34,13 +34,13 @@ namespace BrickJutsu
             foreach (var item in o) //pour chaque item dans le JSON
             {
                 lstBoxAllCartes.Items.Add(item["nom"].ToString());
-                maCollection.ajouterCarte(new Carte(item["nom"].ToString(), Convert.ToInt32(item["numero"])));
+                maCollection.ajouterCarte(new Personnage(Convert.ToInt32(item["numero"]), item["nom"].ToString()));
 
             }
 
             
-            string newjson = JsonConvert.SerializeObject(maCollection);
-            MessageBox.Show(newjson);
+            string jsonMaCollection = JsonConvert.SerializeObject(maCollection);
+            MessageBox.Show(jsonMaCollection);
         }
     }
 }

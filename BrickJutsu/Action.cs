@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace BrickJutsu
 {
-    class Action
+    class Action : Carte
     {
         #region ATTRIBUTS
         string descritpion;
         #endregion
 
         #region CONSTRUCTEUR      
-        public Action(string uneDescription)
+        public Action(string uneDescription, int unNumero, string unNom) : base (unNumero, unNom)
         {
             this.descritpion = uneDescription;
         }

@@ -14,7 +14,7 @@ namespace BrickJutsu
         #endregion
 
         #region CONSTRUCTEUR  
-        public Carte (string unNom, int unNumero)
+        public Carte (int unNumero, string unNom)
         {
             this.nom = unNom;
             this.numero = unNumero;

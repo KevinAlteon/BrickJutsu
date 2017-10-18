@@ -27,7 +27,7 @@ namespace BrickJutsu
         #endregion
 
         #region ACCESSEURS  
-        internal Carte Carte
+        public Carte Carte
         {
             get
             {
@@ -40,7 +40,7 @@ namespace BrickJutsu
             }
         }
 
-        internal Joueur Joueur
+        public Joueur Joueur
         {
             get
             {
