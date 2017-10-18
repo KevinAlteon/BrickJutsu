@@ -42,5 +42,18 @@ namespace BrickJutsu
             string newjson = JsonConvert.SerializeObject(maCollection);
             MessageBox.Show(newjson);
         }
+
+        //bouton retour
+        private void buttonQuitter_Click(object sender, EventArgs e)
+        {
+            System.Threading.Thread monthread = new System.Threading.Thread(new System.Threading.ThreadStart(retour));
+            monthread.Start();
+            this.Close();
+        }
+
+        public static void retour()
+        {
+            Application.Run(new Accueil());
+        }
     }
 }
