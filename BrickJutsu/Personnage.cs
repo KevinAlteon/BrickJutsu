@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace BrickJutsu
 {
-    class Personnage
+    class Personnage : Carte
     {
         #region ATTRIBUTS
+        int numero;
         int attaque;
         int defense;
         int vitesse;
@@ -17,8 +18,9 @@ namespace BrickJutsu
         #endregion
 
         #region CONSTRUCTEUR  
-        public Personnage(int uneAttaque, int uneDefense, int uneVitesse, int uneForce, bool unAllignement)
+        public Personnage(int uneAttaque, int uneDefense, int uneVitesse, int uneForce, bool unAllignement, int unNumero, string unNom) : base (unNumero, unNom)
         {
+            this.numero = unNumero;
             this.attaque = uneAttaque;
             this.defense = uneDefense;
             this.vitesse = uneVitesse;

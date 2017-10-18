@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace BrickJutsu
 {
-    class Vehicule
+    class Vehicule : Carte
     {
         #region ATTRIBUTS
         string descritpion;
         #endregion
 
         #region CONSTRUCTEUR 
-        public Vehicule(string uneDescription)
+        public Vehicule(string uneDescription, int unNumero, string unNom) : base (unNumero, unNom)
         {
             this.descritpion = uneDescription;
         }

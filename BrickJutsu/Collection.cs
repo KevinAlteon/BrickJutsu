@@ -11,15 +11,15 @@ namespace BrickJutsu
         #region ATTRIBUTS
         string nom;
         DateTime dateCreation;
-        List<Carte> lesCartes;
+        List<Personnage> lesCartes;
         #endregion
 
         #region CONSTRUCTEUR  
-        public Collection(string unNom, DateTime uneDateCreation)
+        public Collection(string unNom)
         {
             this.nom = unNom;
-            this.dateCreation = uneDateCreation;
-            this.LesCartes = new List<Carte>();
+            this.dateCreation = DateTime.Now;
+            this.LesCartes = new List<Personnage>();
         }
         #endregion
 
@@ -50,7 +50,7 @@ namespace BrickJutsu
             }
         }
 
-        internal List<Carte> LesCartes
+        internal List<Personnage> LesCartes
         {
             get
             {
@@ -63,7 +63,7 @@ namespace BrickJutsu
             }
         }
         #endregion
-        public void ajouterCarte(Carte uneCarte)
+        public void ajouterCarte(Personnage uneCarte)
         {
             this.LesCartes.Add(uneCarte);
         }
