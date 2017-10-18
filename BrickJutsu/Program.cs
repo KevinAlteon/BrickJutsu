@@ -16,7 +16,7 @@ namespace BrickJutsu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new VoirLesCartes());
+            Application.Run(new Accueil());
         }
     }
 }

@@ -34,7 +34,7 @@ namespace BrickJutsu
             foreach (var item in o) //pour chaque item dans le JSON
             {
                 lstBoxAllCartes.Items.Add(item["nom"].ToString());
-                maCollection.ajouterCarte(new Personnage(Convert.ToInt32(item["numero"]), item["nom"].ToString()));
+                //maCollection.ajouterCarte(new Personnage(Convert.ToInt32(item["numero"]), item["nom"].ToString()));
 
             }
 
