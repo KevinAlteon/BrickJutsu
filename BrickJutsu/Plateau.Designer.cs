@@ -50,6 +50,7 @@
             this.button12 = new System.Windows.Forms.Button();
             this.Main = new System.Windows.Forms.GroupBox();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.button13 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -97,12 +98,15 @@
             // 
             // button8
             // 
+            this.button8.BackColor = System.Drawing.Color.Transparent;
+            this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
+            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
             this.button8.Location = new System.Drawing.Point(111, 233);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(74, 23);
             this.button8.TabIndex = 7;
             this.button8.Text = "Placer ici";
-            this.button8.UseVisualStyleBackColor = true;
+            this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.button2_Click);
             // 
             // button6
@@ -221,12 +225,14 @@
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(496, 119);
+            this.button10.Location = new System.Drawing.Point(564, 116);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(177, 29);
             this.button10.TabIndex = 5;
             this.button10.Text = "Terminer le tour";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Visible = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -278,16 +284,17 @@
             this.Main.Controls.Add(this.radioButton1);
             this.Main.Controls.Add(this.radioButton2);
             this.Main.Controls.Add(this.radioButton3);
-            this.Main.Location = new System.Drawing.Point(372, 26);
+            this.Main.Location = new System.Drawing.Point(449, 26);
             this.Main.Name = "Main";
             this.Main.Size = new System.Drawing.Size(397, 55);
             this.Main.TabIndex = 9;
             this.Main.TabStop = false;
             this.Main.Text = "Sélectionner la carte à placer : ";
+            this.Main.Visible = false;
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(634, 371);
+            this.metroButton1.Location = new System.Drawing.Point(723, 444);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(135, 37);
             this.metroButton1.TabIndex = 10;
@@ -295,11 +302,22 @@
             this.metroButton1.UseSelectable = true;
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(564, 154);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(177, 29);
+            this.button13.TabIndex = 11;
+            this.button13.Text = "Commencer le tour";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
             // Plateau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(781, 414);
+            this.ClientSize = new System.Drawing.Size(869, 504);
+            this.Controls.Add(this.button13);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.Main);
             this.Controls.Add(this.tableLayoutPanel3);
@@ -340,6 +358,7 @@
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.GroupBox Main;
         private MetroFramework.Controls.MetroButton metroButton1;
+        private System.Windows.Forms.Button button13;
     }
 }
 

@@ -25,9 +25,9 @@ namespace BrickJutsu
             int l = tableLayoutPanel1.GetRow(b);
 
 
+            
 
-
-            //verif si bouton checked
+            //Afficher la main
             int carteChoisie = -1;
             int indice = -1;
             foreach (RadioButton rdo in Main.Controls.OfType<RadioButton>())
@@ -41,13 +41,14 @@ namespace BrickJutsu
                 }
             }
 
-            // RadioButton btn = (RadioButton)this.Controls.OfType<RadioButton>().Find("radioButton" + carteChoisie, false);
+            //RadioButton btn = (RadioButton)this.Controls.OfType<RadioButton>().Find("radioButton" + carteChoisie, false);
             //b.Text = 
-            //MessageBox.Show();
+            //MessageBox.Show(StringConverter indice);
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
+
             System.Threading.Thread monthread = new System.Threading.Thread(new System.Threading.ThreadStart(retour));
             monthread.Start();
             this.Close();
@@ -56,6 +57,20 @@ namespace BrickJutsu
         public static void retour()
         {
             Application.Run(new Accueil());
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            button10.Show();
+            Main.Show();
+            button13.Hide();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            button10.Hide();
+            Main.Hide();
+            button13.Show();
         }
     }
 }

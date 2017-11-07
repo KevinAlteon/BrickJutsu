@@ -45,7 +45,12 @@ namespace BrickJutsu
 
         private void metroButton4_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult retour = MessageBox.Show("Voulez vraiment quitter le jeu ? ", "Attention !", MessageBoxButtons.YesNoCancel);
+            if (retour == DialogResult.Yes)
+            {
+                this.Close();
+            }
+            
         }
     }
 }
