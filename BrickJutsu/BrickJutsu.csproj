@@ -69,6 +69,12 @@
       <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
     <Compile Include="Action.cs" />
+    <Compile Include="AjoutCarte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjoutCarte.Designer.cs">
+      <DependentUpon>AjoutCarte.cs</DependentUpon>
+    </Compile>
     <Compile Include="Carte.cs" />
     <Compile Include="Case.cs" />
     <Compile Include="Collection.cs" />
@@ -92,6 +98,9 @@
     <Compile Include="Vehicule.cs" />
     <EmbeddedResource Include="Accueil.resx">
       <DependentUpon>Accueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjoutCarte.resx">
+      <DependentUpon>AjoutCarte.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
