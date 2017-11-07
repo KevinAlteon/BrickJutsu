@@ -49,6 +49,7 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.button12 = new System.Windows.Forms.Button();
             this.Main = new System.Windows.Forms.GroupBox();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -57,6 +58,7 @@
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tableLayoutPanel1.BackgroundImage")));
             this.tableLayoutPanel1.ColumnCount = 5;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88F));
@@ -219,7 +221,7 @@
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(571, 353);
+            this.button10.Location = new System.Drawing.Point(496, 119);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(177, 29);
             this.button10.TabIndex = 5;
@@ -283,11 +285,22 @@
             this.Main.TabStop = false;
             this.Main.Text = "Sélectionner la carte à placer : ";
             // 
+            // metroButton1
+            // 
+            this.metroButton1.Location = new System.Drawing.Point(634, 371);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(135, 37);
+            this.metroButton1.TabIndex = 10;
+            this.metroButton1.Text = "Quitter la partie";
+            this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            // 
             // Plateau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(781, 414);
+            this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.Main);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.button10);
@@ -326,6 +339,7 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.GroupBox Main;
+        private MetroFramework.Controls.MetroButton metroButton1;
     }
 }
 

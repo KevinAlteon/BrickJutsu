@@ -37,9 +37,10 @@
             // titreVoirCartes
             // 
             this.titreVoirCartes.ActiveControl = null;
-            this.titreVoirCartes.Location = new System.Drawing.Point(23, 24);
+            this.titreVoirCartes.Location = new System.Drawing.Point(17, 20);
+            this.titreVoirCartes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.titreVoirCartes.Name = "titreVoirCartes";
-            this.titreVoirCartes.Size = new System.Drawing.Size(1126, 97);
+            this.titreVoirCartes.Size = new System.Drawing.Size(844, 79);
             this.titreVoirCartes.Style = MetroFramework.MetroColorStyle.Lime;
             this.titreVoirCartes.TabIndex = 0;
             this.titreVoirCartes.Text = "BrickJutsu - Voir les cartes";
@@ -48,17 +49,18 @@
             // lstBoxAllCartes
             // 
             this.lstBoxAllCartes.FormattingEnabled = true;
-            this.lstBoxAllCartes.ItemHeight = 16;
-            this.lstBoxAllCartes.Location = new System.Drawing.Point(247, 184);
+            this.lstBoxAllCartes.Location = new System.Drawing.Point(185, 150);
+            this.lstBoxAllCartes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lstBoxAllCartes.Name = "lstBoxAllCartes";
-            this.lstBoxAllCartes.Size = new System.Drawing.Size(654, 308);
+            this.lstBoxAllCartes.Size = new System.Drawing.Size(492, 251);
             this.lstBoxAllCartes.TabIndex = 1;
             // 
             // buttonVoirLesCartes
             // 
-            this.buttonVoirLesCartes.Location = new System.Drawing.Point(515, 127);
+            this.buttonVoirLesCartes.Location = new System.Drawing.Point(386, 103);
+            this.buttonVoirLesCartes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonVoirLesCartes.Name = "buttonVoirLesCartes";
-            this.buttonVoirLesCartes.Size = new System.Drawing.Size(130, 51);
+            this.buttonVoirLesCartes.Size = new System.Drawing.Size(98, 41);
             this.buttonVoirLesCartes.TabIndex = 2;
             this.buttonVoirLesCartes.Text = "Voir les cartes";
             this.buttonVoirLesCartes.UseSelectable = true;
@@ -66,23 +68,27 @@
             // 
             // buttonQuitter
             // 
-            this.buttonQuitter.Location = new System.Drawing.Point(515, 498);
+            this.buttonQuitter.Location = new System.Drawing.Point(386, 405);
+            this.buttonQuitter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonQuitter.Name = "buttonQuitter";
-            this.buttonQuitter.Size = new System.Drawing.Size(130, 51);
+            this.buttonQuitter.Size = new System.Drawing.Size(98, 41);
             this.buttonQuitter.TabIndex = 3;
             this.buttonQuitter.Text = "Quitter";
             this.buttonQuitter.UseSelectable = true;
+            this.buttonQuitter.Click += new System.EventHandler(this.buttonQuitter_Click);
             // 
             // VoirLesCartes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1175, 556);
+            this.ClientSize = new System.Drawing.Size(881, 452);
             this.Controls.Add(this.buttonQuitter);
             this.Controls.Add(this.buttonVoirLesCartes);
             this.Controls.Add(this.lstBoxAllCartes);
             this.Controls.Add(this.titreVoirCartes);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "VoirLesCartes";
+            this.Padding = new System.Windows.Forms.Padding(15, 49, 15, 16);
             this.Style = MetroFramework.MetroColorStyle.Red;
             this.ResumeLayout(false);
 
