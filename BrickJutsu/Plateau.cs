@@ -84,11 +84,11 @@ namespace BrickJutsu
                     rdo.Text = "Jay";
                     break;
                 }
-                else
-                {
-                    MessageBox.Show("Vous ne pouvez pas piocher de carte sans vous défausser ou attendre le tour suivant");
-                    break;
-                }
+                //else
+                //{
+                  //  MessageBox.Show("Vous ne pouvez pas piocher de carte sans vous défausser ou attendre le tour suivant");
+                    //break;
+                //}
             }
         }
 
