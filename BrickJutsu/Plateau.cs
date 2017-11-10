@@ -17,7 +17,7 @@ namespace BrickJutsu
         {
             InitializeComponent();
             lc = new List<Carte>();
-            Personnage p = new Personnage(1, "hugo", 11,11,11,11);
+            Personnage p  = new Personnage(1, "hugo", 11,11,11,11);
             lc.Add(p);
             Personnage p1 = new Personnage(2, "elodie", 15, 10, 10, 1);
             lc.Add(p1);
@@ -33,6 +33,7 @@ namespace BrickJutsu
             lc.Add(p6);
             Personnage p7 = new Personnage(8, "limier", 5, 10, 10, 5);
             lc.Add(p7);
+
         }
 
         private void button2_Click(object sender, EventArgs e)

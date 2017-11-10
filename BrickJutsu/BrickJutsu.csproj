@@ -69,6 +69,12 @@
       <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
     <Compile Include="Action.cs" />
+    <Compile Include="ageJoueur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ageJoueur.Designer.cs">
+      <DependentUpon>ageJoueur.cs</DependentUpon>
+    </Compile>
     <Compile Include="AjoutCarte.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     <Compile Include="Vehicule.cs" />
     <EmbeddedResource Include="Accueil.resx">
       <DependentUpon>Accueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ageJoueur.resx">
+      <DependentUpon>ageJoueur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AjoutCarte.resx">
       <DependentUpon>AjoutCarte.cs</DependentUpon>
