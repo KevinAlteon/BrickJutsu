@@ -42,14 +42,15 @@ namespace BrickJutsu
             {
                 if (rdo.Checked)
                 {
-                     carteChoisie = rdo.Text;
-
+                    carteChoisie = rdo.Text;
+                    rdo.Text = "";
                     break;
                 }
             }
 
          
             b.Text = carteChoisie;
+            
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
@@ -65,6 +66,7 @@ namespace BrickJutsu
             Application.Run(new Accueil());
         }
 
+        //commencer le tour
         private void button13_Click(object sender, EventArgs e)
         {
             button10.Show();
@@ -72,11 +74,48 @@ namespace BrickJutsu
             button13.Hide();
         }
 
+        //terminer le tour
         private void button10_Click(object sender, EventArgs e)
         {
             button10.Hide();
             Main.Hide();
             button13.Show();
+        }
+
+        //Piocher
+        private void button12_Click(object sender, EventArgs e)
+        {
+            foreach (RadioButton rdo in Main.Controls.OfType<RadioButton>())
+            {
+                if (rdo.Text.Equals(""))
+                {
+                    rdo.Text = "Jay";
+                    break;
+                }
+                else
+                {
+                    MessageBox.Show("Vous ne pouvez pas piocher de carte sans vous défausser ou attendre le tour suivant");
+                    break;
+                }
+            }
+        }
+
+        //Défausser
+        private void button11_Click(object sender, EventArgs e)
+        {
+            string carteChoisie = "";
+            Button b = button11;
+            foreach (RadioButton rdo in Main.Controls.OfType<RadioButton>())
+            {
+                if (rdo.Checked)
+                {
+                    carteChoisie = rdo.Text;
+                    b.Text = carteChoisie;
+                    rdo.Text = "";
+                    break;
+                }
+                
+            }
         }
     }
 }
