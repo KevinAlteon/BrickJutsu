@@ -18,7 +18,7 @@ namespace BrickJutsu
         #endregion
 
         #region CONSTRUCTEUR  
-        public Personnage(int uneAttaque, int uneDefense, int uneVitesse, int uneForce, bool unAllignement, int unNumero, string unNom) : base (unNumero, unNom)
+        public Personnage(int unNumero, string unNom, int uneAttaque, int uneDefense, int uneForce, int uneVitesse, bool unAllignement) : base (unNumero, unNom)
         {
             this.numero = unNumero;
             this.attaque = uneAttaque;
