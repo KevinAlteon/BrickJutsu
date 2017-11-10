@@ -101,18 +101,13 @@ namespace BrickJutsu
         //Piocher
         private void button12_Click(object sender, EventArgs e)
         {
-            Random r = new Random();
-            int count = 0;
+            Random ra = new Random();
             foreach (RadioButton rdo in Main.Controls.OfType<RadioButton>())
             {
-                if (count < 3)
+                if (rdo.Text == "")
                 {
-                    rdo.Text = lc[r.Next(lc.Count)].Nom;
-                    count++;
-                }
-                else
-                {
-                    rdo.Text = "";
+                    rdo.Text = lc[ra.Next(lc.Count)].Nom;
+                    
                 }
             }
         }
