@@ -256,6 +256,7 @@
             this.button11.TabIndex = 0;
             this.button11.Text = "Defausser";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -278,6 +279,7 @@
             this.button12.TabIndex = 0;
             this.button12.Text = "Piocher";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // Main
             // 
