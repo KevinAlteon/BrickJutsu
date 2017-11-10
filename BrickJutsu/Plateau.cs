@@ -28,22 +28,20 @@ namespace BrickJutsu
             
 
             //Afficher la main
-            int carteChoisie = -1;
-            int indice = -1;
+            string carteChoisie = "";
+
             foreach (RadioButton rdo in Main.Controls.OfType<RadioButton>())
             {
-                indice++;
                 if (rdo.Checked)
                 {
-                    carteChoisie = indice;
+                     carteChoisie = rdo.Text;
 
                     break;
                 }
             }
 
-            //RadioButton btn = (RadioButton)this.Controls.OfType<RadioButton>().Find("radioButton" + carteChoisie, false);
-            //b.Text = 
-            //MessageBox.Show(StringConverter indice);
+         
+            b.Text = carteChoisie;
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
