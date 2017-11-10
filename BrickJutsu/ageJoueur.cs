@@ -19,7 +19,9 @@ namespace BrickJutsu
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            comboBox1.Items.Add(1);
+            comboBox1.Items.Add("test");
+            comboBox1.Items.Add("ttrt");
+            comboBox1.Items.Add("crcr");
         }
 
         private void button1_Click(object sender, EventArgs e)        
