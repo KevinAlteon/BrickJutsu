@@ -12,9 +12,17 @@ namespace BrickJutsu
 {
     public partial class Plateau : MetroFramework.Forms.MetroForm
     {
+        List<Carte> lc;
         public Plateau()
         {
             InitializeComponent();
+            lc = new List<Carte>();
+            Personnage p = new Personnage(1, "hugo", 11,11,11,11);
+            lc.Add(p);
+            Personnage p1 = new Personnage(1, "elodie", 15, 10, 10, 1);
+            lc.Add(p1);
+            Personnage p2 = new Personnage(1, "kevin", 5, 10, 10, 5);
+            lc.Add(p2);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -28,22 +36,20 @@ namespace BrickJutsu
             
 
             //Afficher la main
-            int carteChoisie = -1;
-            int indice = -1;
+            string carteChoisie = "";
+
             foreach (RadioButton rdo in Main.Controls.OfType<RadioButton>())
             {
-                indice++;
                 if (rdo.Checked)
                 {
-                    carteChoisie = indice;
+                     carteChoisie = rdo.Text;
 
                     break;
                 }
             }
 
-            //RadioButton btn = (RadioButton)this.Controls.OfType<RadioButton>().Find("radioButton" + carteChoisie, false);
-            //b.Text = 
-            //MessageBox.Show(StringConverter indice);
+         
+            b.Text = carteChoisie;
         }
 
         private void metroButton1_Click(object sender, EventArgs e)

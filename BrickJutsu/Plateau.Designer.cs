@@ -100,6 +100,7 @@
             // 
             this.button8.BackColor = System.Drawing.Color.Transparent;
             this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
+            this.button8.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
             this.button8.Location = new System.Drawing.Point(111, 233);
             this.button8.Name = "button8";

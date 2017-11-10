@@ -13,17 +13,20 @@ namespace BrickJutsu
         int attaque;
         int defense;
         int vitesse;
-        int force;       
+        int force;
+        //bool allignement;        
         #endregion
 
         #region CONSTRUCTEUR  
-        public Personnage(int unNumero, string unNom, int uneAttaque, int uneDefense, int uneForce, int uneVitesse) : base (unNumero, unNom)
+        public Personnage(int unNumero, string unNom, int uneAttaque, int uneDefense, int uneForce, int uneVitesse //bool unAllignement
+            ) : base (unNumero, unNom)
         {
             this.numero = unNumero;
             this.attaque = uneAttaque;
             this.defense = uneDefense;
             this.vitesse = uneVitesse;
             this.force = uneForce;
+            //this.allignement = unAllignement;
         }
         #endregion
 
@@ -80,6 +83,18 @@ namespace BrickJutsu
             }
         }
 
+        //public bool Allignement
+        //{
+           // get
+          //  {
+            //    return allignement;
+           // }
+
+           // set
+          //  {
+             //   allignement = value;
+          //  }
+        }
         #endregion
-    }
+    
 }
