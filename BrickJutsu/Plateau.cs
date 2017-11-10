@@ -47,11 +47,12 @@ namespace BrickJutsu
 
             //Afficher la main
             string carteChoisie = "";
-
+           
             foreach (RadioButton rdo in Main.Controls.OfType<RadioButton>())
             {
                 if (rdo.Checked)
-                {
+                    
+                { 
                     carteChoisie = rdo.Text;
                     rdo.Text = "";
                     break;
@@ -76,12 +77,15 @@ namespace BrickJutsu
             Application.Run(new Accueil());
         }
 
+
         //commencer le tour
         private void button13_Click(object sender, EventArgs e)
         {
             button10.Show();
             Main.Show();
             button13.Hide();
+            button14.Hide();
+
         }
 
         //terminer le tour
@@ -90,23 +94,25 @@ namespace BrickJutsu
             button10.Hide();
             Main.Hide();
             button13.Show();
+            button14.Hide();
         }
-
+        
         //Piocher
         private void button12_Click(object sender, EventArgs e)
         {
+            Random r = new Random();
+            int count = 0;
             foreach (RadioButton rdo in Main.Controls.OfType<RadioButton>())
             {
-                if (rdo.Text.Equals(""))
+                if (count < 3)
                 {
-                    rdo.Text = "Jay";
-                    break;
+                    rdo.Text = lc[r.Next(lc.Count)].Nom;
+                    count++;
                 }
-                //else
-                //{
-                  //  MessageBox.Show("Vous ne pouvez pas piocher de carte sans vous défausser ou attendre le tour suivant");
-                    //break;
-                //}
+                else
+                {
+                    rdo.Text = "";
+                }
             }
         }
 
@@ -126,6 +132,26 @@ namespace BrickJutsu
                 }
                 
             }
+        }
+       
+        //Début de partie 
+        private void button14_Click(object sender, EventArgs e)
+        {
+            button10.Show();
+            Main.Show();
+            button13.Show();
+            button14.Hide();
+
+            Random r = new Random();
+            int count = 0;
+              foreach (RadioButton rdo in Main.Controls.OfType<RadioButton>())
+                {
+                   if (count< 3)
+                     {
+                        rdo.Text = lc[r.Next(lc.Count)].Nom;
+                        count++;
+                     }
+             }
         }
     }
 }
