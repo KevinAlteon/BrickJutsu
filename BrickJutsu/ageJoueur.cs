@@ -15,15 +15,13 @@ namespace BrickJutsu
         public ageJoueur()
         {
             InitializeComponent();
+            for (int i = 1; i <= 99; i++)
+            {
+                comboBox1.Items.Add(i);
+                comboBox2.Items.Add(i);
+            }
         }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            comboBox1.Items.Add("test");
-            comboBox1.Items.Add("ttrt");
-            comboBox1.Items.Add("crcr");
-        }
-
+        
         private void button1_Click(object sender, EventArgs e)        
         {
             System.Threading.Thread monthread = new System.Threading.Thread(new System.Threading.ThreadStart(jouer));

@@ -37,6 +37,8 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -66,6 +68,7 @@
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Location = new System.Drawing.Point(23, 121);
@@ -80,12 +83,12 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 24);
             this.comboBox1.TabIndex = 1;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // panel3
             // 
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.comboBox2);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(350, 121);
@@ -123,6 +126,24 @@
             this.panel2.Size = new System.Drawing.Size(1159, 607);
             this.panel2.TabIndex = 5;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(171, 134);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(41, 17);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "an(s)";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(162, 134);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(41, 17);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "an(s)";
+            // 
             // ageJoueur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -151,5 +172,7 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
