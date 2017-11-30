@@ -43,15 +43,15 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.button10 = new System.Windows.Forms.Button();
+            this.TerminerTour = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.button11 = new System.Windows.Forms.Button();
+            this.Défausser = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.button12 = new System.Windows.Forms.Button();
+            this.Piocher = new System.Windows.Forms.Button();
             this.Main = new System.Windows.Forms.GroupBox();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
+            this.CommencerTour = new System.Windows.Forms.Button();
+            this.DebutPartie = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -221,23 +221,23 @@
             this.radioButton4.TabStop = true;
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // TerminerTour
             // 
-            this.button10.Location = new System.Drawing.Point(564, 116);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(177, 29);
-            this.button10.TabIndex = 5;
-            this.button10.Text = "Terminer le tour";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Visible = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.TerminerTour.Location = new System.Drawing.Point(564, 116);
+            this.TerminerTour.Name = "TerminerTour";
+            this.TerminerTour.Size = new System.Drawing.Size(177, 29);
+            this.TerminerTour.TabIndex = 5;
+            this.TerminerTour.Text = "Terminer le tour";
+            this.TerminerTour.UseVisualStyleBackColor = true;
+            this.TerminerTour.Visible = false;
+            this.TerminerTour.Click += new System.EventHandler(this.TerminerTour_Click);
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tableLayoutPanel2.BackgroundImage")));
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.button11, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.Défausser, 0, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(353, 259);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
@@ -245,22 +245,22 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(82, 123);
             this.tableLayoutPanel2.TabIndex = 6;
             // 
-            // button11
+            // Défausser
             // 
-            this.button11.Location = new System.Drawing.Point(3, 3);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 23);
-            this.button11.TabIndex = 0;
-            this.button11.Text = "Defausser";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.Défausser.Location = new System.Drawing.Point(3, 3);
+            this.Défausser.Name = "Défausser";
+            this.Défausser.Size = new System.Drawing.Size(75, 23);
+            this.Défausser.TabIndex = 0;
+            this.Défausser.Text = "Défausser";
+            this.Défausser.UseVisualStyleBackColor = true;
+            this.Défausser.Click += new System.EventHandler(this.Défausser_Click);
             // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tableLayoutPanel3.BackgroundImage")));
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.button12, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.Piocher, 0, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(353, 147);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
@@ -268,15 +268,15 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(82, 113);
             this.tableLayoutPanel3.TabIndex = 7;
             // 
-            // button12
+            // Piocher
             // 
-            this.button12.Location = new System.Drawing.Point(3, 3);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 23);
-            this.button12.TabIndex = 0;
-            this.button12.Text = "Piocher";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            this.Piocher.Location = new System.Drawing.Point(3, 3);
+            this.Piocher.Name = "Piocher";
+            this.Piocher.Size = new System.Drawing.Size(75, 23);
+            this.Piocher.TabIndex = 0;
+            this.Piocher.Text = "Piocher";
+            this.Piocher.UseVisualStyleBackColor = true;
+            this.Piocher.Click += new System.EventHandler(this.Piocher_Click);
             // 
             // Main
             // 
@@ -302,38 +302,38 @@
             this.metroButton1.UseSelectable = true;
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
-            // button13
+            // CommencerTour
             // 
-            this.button13.Location = new System.Drawing.Point(564, 154);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(177, 29);
-            this.button13.TabIndex = 11;
-            this.button13.Text = "Commencer le tour";
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Visible = false;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
+            this.CommencerTour.Location = new System.Drawing.Point(564, 154);
+            this.CommencerTour.Name = "CommencerTour";
+            this.CommencerTour.Size = new System.Drawing.Size(177, 29);
+            this.CommencerTour.TabIndex = 11;
+            this.CommencerTour.Text = "Commencer le tour";
+            this.CommencerTour.UseVisualStyleBackColor = true;
+            this.CommencerTour.Visible = false;
+            this.CommencerTour.Click += new System.EventHandler(this.CommencerTour_Click);
             // 
-            // button14
+            // DebutPartie
             // 
-            this.button14.Location = new System.Drawing.Point(564, 189);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(177, 29);
-            this.button14.TabIndex = 12;
-            this.button14.Text = "Début de partie";
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
+            this.DebutPartie.Location = new System.Drawing.Point(564, 189);
+            this.DebutPartie.Name = "DebutPartie";
+            this.DebutPartie.Size = new System.Drawing.Size(177, 29);
+            this.DebutPartie.TabIndex = 12;
+            this.DebutPartie.Text = "Début de partie";
+            this.DebutPartie.UseVisualStyleBackColor = true;
+            this.DebutPartie.Click += new System.EventHandler(this.DebutPartie_Click);
             // 
             // Plateau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(869, 504);
-            this.Controls.Add(this.button14);
-            this.Controls.Add(this.button13);
+            this.Controls.Add(this.DebutPartie);
+            this.Controls.Add(this.CommencerTour);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.Main);
             this.Controls.Add(this.tableLayoutPanel3);
-            this.Controls.Add(this.button10);
+            this.Controls.Add(this.TerminerTour);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Name = "Plateau";
@@ -363,15 +363,15 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button TerminerTour;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button Défausser;
+        private System.Windows.Forms.Button Piocher;
         private System.Windows.Forms.GroupBox Main;
         private MetroFramework.Controls.MetroButton metroButton1;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button CommencerTour;
+        private System.Windows.Forms.Button DebutPartie;
     }
 }
 

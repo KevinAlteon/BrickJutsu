@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace BrickJutsu
 {
-    public partial class ageJoueur : MetroFramework.Forms.MetroForm
+    public partial class InstanceJoueur : MetroFramework.Forms.MetroForm
     {
-        public ageJoueur()
+        public InstanceJoueur()
         {
             InitializeComponent();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            comboBox1.Items.Add(1);
-        }
-
-        private void button1_Click(object sender, EventArgs e)        
+        private void button1_Click(object sender, EventArgs e)
         {
             System.Threading.Thread monthread = new System.Threading.Thread(new System.Threading.ThreadStart(jouer));
             monthread.Start();
@@ -34,7 +29,16 @@ namespace BrickJutsu
             Application.Run(new Plateau());
         }
 
-        
+        private void button2_Click(object sender, EventArgs e)
+        {
+            System.Threading.Thread monthread = new System.Threading.Thread(new System.Threading.ThreadStart(retour));
+            monthread.Start();
+            this.Close();
+        }
+
+        public static void retour()
+        {
+            Application.Run(new Accueil());
+        }
     }
 }
-

@@ -27,7 +27,7 @@ namespace BrickJutsu
 
         public static void jouer()
         {
-            Application.Run(new ageJoueur());
+            Application.Run(new InstanceJoueur());
         }
 
         //gestion collection

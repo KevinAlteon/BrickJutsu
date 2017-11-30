@@ -69,11 +69,11 @@
       <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
     <Compile Include="Action.cs" />
-    <Compile Include="ageJoueur.cs">
+    <Compile Include="InstanceJoueur.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ageJoueur.Designer.cs">
-      <DependentUpon>ageJoueur.cs</DependentUpon>
+    <Compile Include="InstanceJoueur.Designer.cs">
+      <DependentUpon>InstanceJoueur.cs</DependentUpon>
     </Compile>
     <Compile Include="AjoutCarte.cs">
       <SubType>Form</SubType>
@@ -105,8 +105,8 @@
     <EmbeddedResource Include="Accueil.resx">
       <DependentUpon>Accueil.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ageJoueur.resx">
-      <DependentUpon>ageJoueur.cs</DependentUpon>
+    <EmbeddedResource Include="InstanceJoueur.resx">
+      <DependentUpon>InstanceJoueur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AjoutCarte.resx">
       <DependentUpon>AjoutCarte.cs</DependentUpon>
