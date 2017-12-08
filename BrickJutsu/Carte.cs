@@ -10,13 +10,13 @@ namespace BrickJutsu
     {
         #region ATTRIBUTS
         string nom;
-        int numero;
+        string numero;
         int nbExemplaire;
         string description;
         #endregion
 
         #region CONSTRUCTEUR  
-        public Carte (int unNumero, string unNom)
+        public Carte (string unNumero, string unNom)
         {
             this.nom = unNom;
             this.numero = unNumero;
@@ -39,7 +39,7 @@ namespace BrickJutsu
             }
         }
 
-        public int Numero
+        public string Numero
         {
             get
             {

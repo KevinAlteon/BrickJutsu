@@ -22,21 +22,22 @@ namespace BrickJutsu
 
         private void button1_Click(object sender, EventArgs e)
         {
-            System.Threading.Thread monthread = new System.Threading.Thread(new System.Threading.ThreadStart(jouer));
-            monthread.Start();
-            this.Close();
-
             Joueur j = new Joueur(Joueur.ToString());
             Joueur j1 = new Joueur(Joueur1.ToString());
 
             if (this.nbJ1 > this.nbJ2)
             {
-                MessageBox.Show(j + " commence la partie ! ");
+                MessageBox.Show(j.Nom + " commence la partie ! ");
             }
             else
             {
-                MessageBox.Show(j1 + " commence la partie ! ");
+                MessageBox.Show(j1.Nom +" commence la partie ! ");
             }
+
+
+            System.Threading.Thread monthread = new System.Threading.Thread(new System.Threading.ThreadStart(jouer));
+            monthread.Start();
+            this.Close();
         }
 
         public static void jouer()

@@ -69,7 +69,9 @@
       <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
     <Compile Include="Action.cs" />
-    <Compile Include="InstanceJoueur.cs" />
+    <Compile Include="InstanceJoueur.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="InstanceJoueur.Designer.cs">
       <DependentUpon>InstanceJoueur.cs</DependentUpon>
     </Compile>

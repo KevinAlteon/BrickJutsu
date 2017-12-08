@@ -9,7 +9,7 @@ namespace BrickJutsu
     class Personnage : Carte
     {
         #region ATTRIBUTS
-        int numero;
+        string numero;
         int attaque;
         int defense;
         int vitesse;
@@ -18,7 +18,7 @@ namespace BrickJutsu
         #endregion
 
         #region CONSTRUCTEUR  
-        public Personnage(int unNumero, string unNom, int uneAttaque, int uneDefense, int uneForce, int uneVitesse //bool unAllignement
+        public Personnage(string unNumero, string unNom, int uneAttaque, int uneDefense, int uneForce, int uneVitesse //bool unAllignement
             ) : base (unNumero, unNom)
         {
             this.numero = unNumero;
