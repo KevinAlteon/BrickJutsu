@@ -42,7 +42,7 @@ namespace BrickJutsu
         {
             Application.Run(new VoirLesCartes());
         }
-
+         
         private void metroButton4_Click(object sender, EventArgs e)
         {
             DialogResult retour = MessageBox.Show("Voulez vraiment quitter le jeu ? ", "Attention !", MessageBoxButtons.YesNoCancel);

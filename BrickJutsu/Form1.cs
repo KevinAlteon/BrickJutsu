@@ -39,7 +39,7 @@ namespace BrickJutsu
 
             String url = "http://localhost/ninjago/public/api"; //là c'est l'adresse de l'api qu'on veut chopper
             var res = new WebClient();  //webClient est utilisable grâce à System.Net
-            var json = res.DownloadString(url);             // il existe uploadString aussi (choppe la chaine en json qu'il y a sur l'api)
+            var json = res.DownloadString(url); // il existe uploadString aussi (choppe la chaine en json qu'il y a sur l'api)
             JArray o = JArray.Parse(json); //on en fait un tableau
 
             foreach (var item in o) //pour chaque item dans le JSON
