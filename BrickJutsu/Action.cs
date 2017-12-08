@@ -13,7 +13,7 @@ namespace BrickJutsu
         #endregion
 
         #region CONSTRUCTEUR      
-        public Action(string uneDescription, int unNumero, string unNom) : base (unNumero, unNom)
+        public Action(string uneDescription, string unNumero, string unNom) : base (unNumero, unNom)
         {
             this.description = uneDescription;
         }
