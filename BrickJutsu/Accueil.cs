@@ -15,6 +15,7 @@ namespace BrickJutsu
         public Accueil()
         {
             InitializeComponent();
+            //test
         }
     }
 }
