@@ -42,7 +42,9 @@ namespace BrickJutsu
         {
             Application.Run(new VoirLesCartes());
         }
-         
+
+
+
         private void metroButton4_Click(object sender, EventArgs e)
         {
             DialogResult retour = MessageBox.Show("Voulez vraiment quitter le jeu ? ", "Attention !", MessageBoxButtons.YesNoCancel);
@@ -51,6 +53,18 @@ namespace BrickJutsu
                 this.Close();
             }
 
+        }
+
+        private void btnCache_Click_1(object sender, EventArgs e)
+        {
+            System.Threading.Thread monthread = new System.Threading.Thread(new System.Threading.ThreadStart(gestionCollection2));
+            monthread.Start();
+            this.Close();
+        }
+
+        public static void gestionCollection2()
+        {
+            Application.Run(new AjoutCarte());
         }
     }
 }

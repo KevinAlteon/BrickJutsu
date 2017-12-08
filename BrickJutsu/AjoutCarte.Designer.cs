@@ -38,6 +38,7 @@
             this.btnTelecharger = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnRetour = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -65,6 +66,7 @@
             this.btnVoirMenu.TabIndex = 1;
             this.btnVoirMenu.Text = "Voir tes cartes";
             this.btnVoirMenu.UseVisualStyleBackColor = false;
+            this.btnVoirMenu.Click += new System.EventHandler(this.btnVoirMenu_Click);
             // 
             // btnSupprimeMenu
             // 
@@ -142,6 +144,7 @@
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.btnRetour);
             this.panel1.Controls.Add(this.btnAjout);
             this.panel1.Controls.Add(this.btnRechercher);
             this.panel1.Controls.Add(this.btnTelecharger);
@@ -154,6 +157,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1160, 616);
             this.panel1.TabIndex = 13;
+            // 
+            // btnRetour
+            // 
+            this.btnRetour.BackColor = System.Drawing.Color.Transparent;
+            this.btnRetour.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRetour.BackgroundImage")));
+            this.btnRetour.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRetour.Location = new System.Drawing.Point(3, 3);
+            this.btnRetour.Name = "btnRetour";
+            this.btnRetour.Size = new System.Drawing.Size(79, 52);
+            this.btnRetour.TabIndex = 13;
+            this.btnRetour.UseVisualStyleBackColor = false;
+            this.btnRetour.Click += new System.EventHandler(this.btnRetour_Click);
             // 
             // AjoutCarte
             // 
@@ -184,5 +199,6 @@
         private System.Windows.Forms.Button btnTelecharger;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnRetour;
     }
 }
