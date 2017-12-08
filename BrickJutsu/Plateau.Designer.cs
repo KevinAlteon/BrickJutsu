@@ -61,12 +61,13 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tableLayoutPanel1.BackgroundImage")));
+            this.tableLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tableLayoutPanel1.ColumnCount = 5;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 117F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 117F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 117F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 29F));
             this.tableLayoutPanel1.Controls.Add(this.button7, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.button8, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.button6, 3, 2);
@@ -76,22 +77,24 @@
             this.tableLayoutPanel1.Controls.Add(this.button3, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.button9, 3, 3);
             this.tableLayoutPanel1.Controls.Add(this.button1, 1, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(45, 26);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(60, 32);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 105F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 105F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 105F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(306, 356);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 129F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 129F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 129F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(408, 438);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(23, 233);
+            this.button7.Location = new System.Drawing.Point(31, 287);
+            this.button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(74, 23);
+            this.button7.Size = new System.Drawing.Size(99, 28);
             this.button7.TabIndex = 6;
             this.button7.Text = "Placer ici";
             this.button7.UseVisualStyleBackColor = true;
@@ -103,9 +106,10 @@
             this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
             this.button8.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.Location = new System.Drawing.Point(111, 233);
+            this.button8.Location = new System.Drawing.Point(148, 287);
+            this.button8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(74, 23);
+            this.button8.Size = new System.Drawing.Size(99, 28);
             this.button8.TabIndex = 7;
             this.button8.Text = "Placer ici";
             this.button8.UseVisualStyleBackColor = false;
@@ -113,9 +117,10 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(199, 128);
+            this.button6.Location = new System.Drawing.Point(265, 158);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(74, 23);
+            this.button6.Size = new System.Drawing.Size(99, 28);
             this.button6.TabIndex = 5;
             this.button6.Text = "Placer ici";
             this.button6.UseVisualStyleBackColor = true;
@@ -123,9 +128,10 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(111, 128);
+            this.button5.Location = new System.Drawing.Point(148, 158);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(74, 23);
+            this.button5.Size = new System.Drawing.Size(99, 28);
             this.button5.TabIndex = 4;
             this.button5.Text = "Placer ici";
             this.button5.UseVisualStyleBackColor = true;
@@ -133,9 +139,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(23, 128);
+            this.button4.Location = new System.Drawing.Point(31, 158);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(74, 23);
+            this.button4.Size = new System.Drawing.Size(99, 28);
             this.button4.TabIndex = 3;
             this.button4.Text = "Placer ici";
             this.button4.UseVisualStyleBackColor = true;
@@ -143,9 +150,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(111, 23);
+            this.button2.Location = new System.Drawing.Point(148, 29);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(74, 23);
+            this.button2.Size = new System.Drawing.Size(99, 28);
             this.button2.TabIndex = 1;
             this.button2.Text = "Placer ici";
             this.button2.UseVisualStyleBackColor = true;
@@ -153,9 +161,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(199, 23);
+            this.button3.Location = new System.Drawing.Point(265, 29);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(100, 28);
             this.button3.TabIndex = 2;
             this.button3.Text = "Placer ici";
             this.button3.UseVisualStyleBackColor = true;
@@ -163,9 +172,10 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(199, 233);
+            this.button9.Location = new System.Drawing.Point(265, 287);
+            this.button9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(74, 23);
+            this.button9.Size = new System.Drawing.Size(99, 28);
             this.button9.TabIndex = 8;
             this.button9.Text = "Placer ici";
             this.button9.UseVisualStyleBackColor = true;
@@ -173,9 +183,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(23, 23);
+            this.button1.Location = new System.Drawing.Point(31, 29);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 0;
             this.button1.Text = "Placer ici";
             this.button1.UseVisualStyleBackColor = true;
@@ -184,9 +195,10 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(43, 23);
+            this.radioButton1.Location = new System.Drawing.Point(57, 28);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(14, 13);
+            this.radioButton1.Size = new System.Drawing.Size(17, 16);
             this.radioButton1.TabIndex = 1;
             this.radioButton1.TabStop = true;
             this.radioButton1.UseVisualStyleBackColor = true;
@@ -194,9 +206,10 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(134, 23);
+            this.radioButton2.Location = new System.Drawing.Point(179, 28);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(14, 13);
+            this.radioButton2.Size = new System.Drawing.Size(17, 16);
             this.radioButton2.TabIndex = 2;
             this.radioButton2.TabStop = true;
             this.radioButton2.UseVisualStyleBackColor = true;
@@ -204,9 +217,10 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(313, 25);
+            this.radioButton3.Location = new System.Drawing.Point(417, 31);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(14, 13);
+            this.radioButton3.Size = new System.Drawing.Size(17, 16);
             this.radioButton3.TabIndex = 3;
             this.radioButton3.TabStop = true;
             this.radioButton3.UseVisualStyleBackColor = true;
@@ -214,18 +228,20 @@
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(228, 25);
+            this.radioButton4.Location = new System.Drawing.Point(304, 31);
+            this.radioButton4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(14, 13);
+            this.radioButton4.Size = new System.Drawing.Size(17, 16);
             this.radioButton4.TabIndex = 4;
             this.radioButton4.TabStop = true;
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
             // TerminerTour
             // 
-            this.TerminerTour.Location = new System.Drawing.Point(564, 116);
+            this.TerminerTour.Location = new System.Drawing.Point(752, 143);
+            this.TerminerTour.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TerminerTour.Name = "TerminerTour";
-            this.TerminerTour.Size = new System.Drawing.Size(177, 29);
+            this.TerminerTour.Size = new System.Drawing.Size(236, 36);
             this.TerminerTour.TabIndex = 5;
             this.TerminerTour.Text = "Terminer le tour";
             this.TerminerTour.UseVisualStyleBackColor = true;
@@ -235,21 +251,24 @@
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tableLayoutPanel2.BackgroundImage")));
+            this.tableLayoutPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.Défausser, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(353, 259);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(471, 319);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.48077F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(82, 123);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(109, 151);
             this.tableLayoutPanel2.TabIndex = 6;
             // 
             // Défausser
             // 
-            this.Défausser.Location = new System.Drawing.Point(3, 3);
+            this.Défausser.Location = new System.Drawing.Point(4, 4);
+            this.Défausser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Défausser.Name = "Défausser";
-            this.Défausser.Size = new System.Drawing.Size(75, 23);
+            this.Défausser.Size = new System.Drawing.Size(100, 28);
             this.Défausser.TabIndex = 0;
             this.Défausser.Text = "Défausser";
             this.Défausser.UseVisualStyleBackColor = true;
@@ -258,21 +277,24 @@
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tableLayoutPanel3.BackgroundImage")));
+            this.tableLayoutPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.Piocher, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(353, 147);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(471, 181);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.48077F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(82, 113);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(109, 139);
             this.tableLayoutPanel3.TabIndex = 7;
             // 
             // Piocher
             // 
-            this.Piocher.Location = new System.Drawing.Point(3, 3);
+            this.Piocher.Location = new System.Drawing.Point(4, 4);
+            this.Piocher.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Piocher.Name = "Piocher";
-            this.Piocher.Size = new System.Drawing.Size(75, 23);
+            this.Piocher.Size = new System.Drawing.Size(100, 28);
             this.Piocher.TabIndex = 0;
             this.Piocher.Text = "Piocher";
             this.Piocher.UseVisualStyleBackColor = true;
@@ -284,9 +306,11 @@
             this.Main.Controls.Add(this.radioButton1);
             this.Main.Controls.Add(this.radioButton2);
             this.Main.Controls.Add(this.radioButton3);
-            this.Main.Location = new System.Drawing.Point(449, 26);
+            this.Main.Location = new System.Drawing.Point(599, 32);
+            this.Main.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Main.Name = "Main";
-            this.Main.Size = new System.Drawing.Size(397, 55);
+            this.Main.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Main.Size = new System.Drawing.Size(529, 68);
             this.Main.TabIndex = 9;
             this.Main.TabStop = false;
             this.Main.Text = "Sélectionner la carte à placer : ";
@@ -294,9 +318,10 @@
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(723, 444);
+            this.metroButton1.Location = new System.Drawing.Point(964, 546);
+            this.metroButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(135, 37);
+            this.metroButton1.Size = new System.Drawing.Size(180, 46);
             this.metroButton1.TabIndex = 10;
             this.metroButton1.Text = "Quitter la partie";
             this.metroButton1.UseSelectable = true;
@@ -304,9 +329,10 @@
             // 
             // CommencerTour
             // 
-            this.CommencerTour.Location = new System.Drawing.Point(564, 154);
+            this.CommencerTour.Location = new System.Drawing.Point(752, 190);
+            this.CommencerTour.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CommencerTour.Name = "CommencerTour";
-            this.CommencerTour.Size = new System.Drawing.Size(177, 29);
+            this.CommencerTour.Size = new System.Drawing.Size(236, 36);
             this.CommencerTour.TabIndex = 11;
             this.CommencerTour.Text = "Commencer le tour";
             this.CommencerTour.UseVisualStyleBackColor = true;
@@ -315,9 +341,10 @@
             // 
             // DebutPartie
             // 
-            this.DebutPartie.Location = new System.Drawing.Point(564, 189);
+            this.DebutPartie.Location = new System.Drawing.Point(752, 233);
+            this.DebutPartie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DebutPartie.Name = "DebutPartie";
-            this.DebutPartie.Size = new System.Drawing.Size(177, 29);
+            this.DebutPartie.Size = new System.Drawing.Size(236, 36);
             this.DebutPartie.TabIndex = 12;
             this.DebutPartie.Text = "Début de partie";
             this.DebutPartie.UseVisualStyleBackColor = true;
@@ -325,9 +352,9 @@
             // 
             // Plateau
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(869, 504);
+            this.ClientSize = new System.Drawing.Size(1159, 620);
             this.Controls.Add(this.DebutPartie);
             this.Controls.Add(this.CommencerTour);
             this.Controls.Add(this.metroButton1);
@@ -336,7 +363,9 @@
             this.Controls.Add(this.TerminerTour);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.tableLayoutPanel2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Plateau";
+            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Style = MetroFramework.MetroColorStyle.Silver;
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);

@@ -28,175 +28,161 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AjoutCarte));
+            this.btnAjoutMenu = new System.Windows.Forms.Button();
+            this.btnVoirMenu = new System.Windows.Forms.Button();
+            this.btnSupprimeMenu = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnRechercher = new System.Windows.Forms.Button();
+            this.btnAjout = new System.Windows.Forms.Button();
+            this.btnTelecharger = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // btnAjoutMenu
             // 
-            this.button1.Location = new System.Drawing.Point(26, 52);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(250, 63);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Ajouter carte à sa collection";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAjoutMenu.BackColor = System.Drawing.Color.Bisque;
+            this.btnAjoutMenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAjoutMenu.BackgroundImage")));
+            this.btnAjoutMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjoutMenu.Location = new System.Drawing.Point(199, 0);
+            this.btnAjoutMenu.Name = "btnAjoutMenu";
+            this.btnAjoutMenu.Size = new System.Drawing.Size(250, 63);
+            this.btnAjoutMenu.TabIndex = 0;
+            this.btnAjoutMenu.Text = "Ajouter carte à sa collection";
+            this.btnAjoutMenu.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnVoirMenu
             // 
-            this.button2.Location = new System.Drawing.Point(298, 52);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(250, 63);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Voir tes cartes";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnVoirMenu.BackColor = System.Drawing.Color.Bisque;
+            this.btnVoirMenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnVoirMenu.BackgroundImage")));
+            this.btnVoirMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoirMenu.Location = new System.Drawing.Point(455, 0);
+            this.btnVoirMenu.Name = "btnVoirMenu";
+            this.btnVoirMenu.Size = new System.Drawing.Size(250, 63);
+            this.btnVoirMenu.TabIndex = 1;
+            this.btnVoirMenu.Text = "Voir tes cartes";
+            this.btnVoirMenu.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnSupprimeMenu
             // 
-            this.button3.Location = new System.Drawing.Point(571, 52);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(250, 63);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Supprime une de tes cartes ";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(321, 131);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(209, 17);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Ajoute des cartes à ta collection";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(71, 214);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 17);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Chercher par nom";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 294);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(214, 17);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Chercher par numéro de la carte";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(260, 211);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(186, 22);
-            this.textBox1.TabIndex = 6;
+            this.btnSupprimeMenu.BackColor = System.Drawing.Color.Bisque;
+            this.btnSupprimeMenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSupprimeMenu.BackgroundImage")));
+            this.btnSupprimeMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSupprimeMenu.Location = new System.Drawing.Point(711, 0);
+            this.btnSupprimeMenu.Name = "btnSupprimeMenu";
+            this.btnSupprimeMenu.Size = new System.Drawing.Size(250, 63);
+            this.btnSupprimeMenu.TabIndex = 2;
+            this.btnSupprimeMenu.Text = "Supprime une de tes cartes ";
+            this.btnSupprimeMenu.UseVisualStyleBackColor = false;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(260, 291);
+            this.textBox2.BackColor = System.Drawing.Color.Snow;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.textBox2.Location = new System.Drawing.Point(3, 453);
+            this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(186, 22);
+            this.textBox2.Size = new System.Drawing.Size(165, 40);
             this.textBox2.TabIndex = 7;
+            this.textBox2.Text = "Chercher par nom";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label4
+            // btnRechercher
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(116, 255);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(24, 17);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "ou";
+            this.btnRechercher.BackColor = System.Drawing.Color.Transparent;
+            this.btnRechercher.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRechercher.Location = new System.Drawing.Point(3, 522);
+            this.btnRechercher.Name = "btnRechercher";
+            this.btnRechercher.Size = new System.Drawing.Size(165, 91);
+            this.btnRechercher.TabIndex = 9;
+            this.btnRechercher.Text = "Rechercher";
+            this.btnRechercher.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnAjout
             // 
-            this.button4.Location = new System.Drawing.Point(188, 369);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(109, 23);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "Rechercher";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnAjout.BackColor = System.Drawing.Color.Transparent;
+            this.btnAjout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAjout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjout.Location = new System.Drawing.Point(992, 521);
+            this.btnAjout.Name = "btnAjout";
+            this.btnAjout.Size = new System.Drawing.Size(165, 92);
+            this.btnAjout.TabIndex = 10;
+            this.btnAjout.Text = "Ajouter";
+            this.btnAjout.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnTelecharger
             // 
-            this.button5.Location = new System.Drawing.Point(630, 369);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "Ajouter";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(354, 412);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(147, 69);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "Afficher toutes les cartes du jeu";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnTelecharger.BackColor = System.Drawing.Color.White;
+            this.btnTelecharger.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTelecharger.BackgroundImage")));
+            this.btnTelecharger.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTelecharger.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTelecharger.Location = new System.Drawing.Point(191, 69);
+            this.btnTelecharger.Name = "btnTelecharger";
+            this.btnTelecharger.Size = new System.Drawing.Size(782, 36);
+            this.btnTelecharger.TabIndex = 11;
+            this.btnTelecharger.Text = "Télécharger les cartes";
+            this.btnTelecharger.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(571, 164);
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(455, 111);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(204, 186);
+            this.pictureBox1.Size = new System.Drawing.Size(250, 250);
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.btnAjout);
+            this.panel1.Controls.Add(this.btnRechercher);
+            this.panel1.Controls.Add(this.btnTelecharger);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.btnSupprimeMenu);
+            this.panel1.Controls.Add(this.btnVoirMenu);
+            this.panel1.Controls.Add(this.btnAjoutMenu);
+            this.panel1.Location = new System.Drawing.Point(-1, 4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1160, 616);
+            this.panel1.TabIndex = 13;
             // 
             // AjoutCarte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(869, 504);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(1159, 620);
+            this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "AjoutCarte";
             this.Style = MetroFramework.MetroColorStyle.Silver;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnAjoutMenu;
+        private System.Windows.Forms.Button btnVoirMenu;
+        private System.Windows.Forms.Button btnSupprimeMenu;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnRechercher;
+        private System.Windows.Forms.Button btnAjout;
+        private System.Windows.Forms.Button btnTelecharger;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

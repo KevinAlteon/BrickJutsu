@@ -32,6 +32,7 @@
             this.lstBoxAllCartes = new System.Windows.Forms.ListBox();
             this.buttonVoirLesCartes = new MetroFramework.Controls.MetroButton();
             this.buttonQuitter = new MetroFramework.Controls.MetroButton();
+            this.voirCartes2 = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // titreVoirCartes
@@ -57,12 +58,12 @@
             // 
             // buttonVoirLesCartes
             // 
-            this.buttonVoirLesCartes.Location = new System.Drawing.Point(386, 103);
+            this.buttonVoirLesCartes.Location = new System.Drawing.Point(367, 103);
             this.buttonVoirLesCartes.Margin = new System.Windows.Forms.Padding(2);
             this.buttonVoirLesCartes.Name = "buttonVoirLesCartes";
-            this.buttonVoirLesCartes.Size = new System.Drawing.Size(98, 41);
+            this.buttonVoirLesCartes.Size = new System.Drawing.Size(128, 41);
             this.buttonVoirLesCartes.TabIndex = 2;
-            this.buttonVoirLesCartes.Text = "Voir les cartes";
+            this.buttonVoirLesCartes.Text = "télécharger les cartes";
             this.buttonVoirLesCartes.UseSelectable = true;
             this.buttonVoirLesCartes.Click += new System.EventHandler(this.buttonVoirLesCartes_Click);
             // 
@@ -77,11 +78,23 @@
             this.buttonQuitter.UseSelectable = true;
             this.buttonQuitter.Click += new System.EventHandler(this.buttonQuitter_Click);
             // 
+            // voirCartes2
+            // 
+            this.voirCartes2.Location = new System.Drawing.Point(499, 103);
+            this.voirCartes2.Margin = new System.Windows.Forms.Padding(2);
+            this.voirCartes2.Name = "voirCartes2";
+            this.voirCartes2.Size = new System.Drawing.Size(98, 41);
+            this.voirCartes2.TabIndex = 4;
+            this.voirCartes2.Text = "Voir les cartes";
+            this.voirCartes2.UseSelectable = true;
+            this.voirCartes2.Click += new System.EventHandler(this.voirCartes2_Click);
+            // 
             // VoirLesCartes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(869, 504);
+            this.Controls.Add(this.voirCartes2);
             this.Controls.Add(this.buttonQuitter);
             this.Controls.Add(this.buttonVoirLesCartes);
             this.Controls.Add(this.lstBoxAllCartes);
@@ -100,6 +113,7 @@
         private System.Windows.Forms.ListBox lstBoxAllCartes;
         private MetroFramework.Controls.MetroButton buttonVoirLesCartes;
         private MetroFramework.Controls.MetroButton buttonQuitter;
+        private MetroFramework.Controls.MetroButton voirCartes2;
     }
 }
 

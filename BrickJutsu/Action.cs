@@ -9,13 +9,13 @@ namespace BrickJutsu
     class Action : Carte
     {
         #region ATTRIBUTS
-        string descritpion;
+        string description;
         #endregion
 
         #region CONSTRUCTEUR      
         public Action(string uneDescription, int unNumero, string unNom) : base (unNumero, unNom)
         {
-            this.descritpion = uneDescription;
+            this.description = uneDescription;
         }
         #endregion
 
@@ -24,12 +24,12 @@ namespace BrickJutsu
         {
             get
             {
-                return descritpion;
+                return description;
             }
 
             set
             {
-                descritpion = value;
+                description = value;
             }
         }
         #endregion
