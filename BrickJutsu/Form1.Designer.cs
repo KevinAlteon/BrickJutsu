@@ -87,7 +87,6 @@
             this.voirCartes2.TabIndex = 4;
             this.voirCartes2.Text = "Voir les cartes";
             this.voirCartes2.UseSelectable = true;
-            this.voirCartes2.Click += new System.EventHandler(this.voirCartes2_Click);
             // 
             // VoirLesCartes
             // 
