@@ -11,6 +11,8 @@ namespace BrickJutsu
         #region ATTRIBUTS
         string nom;
         int numero;
+        int nbExemplaire;
+        string description;
         #endregion
 
         #region CONSTRUCTEUR  
@@ -18,6 +20,8 @@ namespace BrickJutsu
         {
             this.nom = unNom;
             this.numero = unNumero;
+            this.NbExemplaire = 0;
+            this.Description = null;
         }
         #endregion
 
@@ -45,6 +49,32 @@ namespace BrickJutsu
             set
             {
                 numero = value;
+            }
+        }
+
+        public int NbExemplaire
+        {
+            get
+            {
+                return nbExemplaire;
+            }
+
+            set
+            {
+                nbExemplaire = value;
+            }
+        }
+
+        public string Description
+        {
+            get
+            {
+                return description;
+            }
+
+            set
+            {
+                description = value;
             }
         }
         #endregion

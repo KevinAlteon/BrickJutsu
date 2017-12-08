@@ -11,6 +11,7 @@ using Newtonsoft;
 using System.Net;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
+using System.IO;
 
 namespace BrickJutsu
 {
@@ -19,6 +20,16 @@ namespace BrickJutsu
         public VoirLesCartes()
         {
             InitializeComponent();
+            if (File.Exists(Path.Combine(Directory.GetCurrentDirectory(), "persos.json")))
+            {
+                voirCartes2.Visible = true;
+                buttonVoirLesCartes.Visible = false;
+            }
+            else
+            {
+                voirCartes2.Visible = false;
+                buttonVoirLesCartes.Visible = true;
+            }
         }
 
         private void buttonVoirLesCartes_Click(object sender, EventArgs e)
@@ -34,13 +45,25 @@ namespace BrickJutsu
             foreach (var item in o) //pour chaque item dans le JSON
             {
                 lstBoxAllCartes.Items.Add(item["nom"].ToString());
-                maCollection.ajouterCarte(new Personnage(Convert.ToInt32(item["numero"]), item["nom"].ToString()));
-
+                if (item["type"].ToString() == "P")
+                {
+                    maCollection.ajouterCarte(new Personnage(item["numero"].ToString(), item["nom"].ToString(), Convert.ToInt32(item["attaque"]), Convert.ToInt32(item["defense"]), Convert.ToInt32(item["force"]), Convert.ToInt32(item["vitesse"])));
+                }
             }
+            File.WriteAllText("persos.json", JsonConvert.SerializeObject(maCollection, Formatting.Indented));
+        }
 
-            
-            string jsonMaCollection = JsonConvert.SerializeObject(maCollection);
-            MessageBox.Show(jsonMaCollection);
+        //bouton retour
+        private void buttonQuitter_Click(object sender, EventArgs e)
+        {
+            System.Threading.Thread monthread = new System.Threading.Thread(new System.Threading.ThreadStart(retour));
+            monthread.Start();
+            this.Close();
+        }
+
+        public static void retour()
+        {
+            Application.Run(new Accueil());
         }
     }
 }
