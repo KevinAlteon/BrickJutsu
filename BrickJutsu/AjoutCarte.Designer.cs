@@ -83,7 +83,7 @@
             this.textBox2.BackColor = System.Drawing.Color.Snow;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox2.Location = new System.Drawing.Point(13, 439);
+            this.textBox2.Location = new System.Drawing.Point(3, 453);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(165, 40);
@@ -95,7 +95,7 @@
             // 
             this.btnRechercher.BackColor = System.Drawing.Color.Transparent;
             this.btnRechercher.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRechercher.Location = new System.Drawing.Point(13, 509);
+            this.btnRechercher.Location = new System.Drawing.Point(3, 522);
             this.btnRechercher.Name = "btnRechercher";
             this.btnRechercher.Size = new System.Drawing.Size(165, 91);
             this.btnRechercher.TabIndex = 9;
@@ -107,7 +107,7 @@
             this.btnAjout.BackColor = System.Drawing.Color.Transparent;
             this.btnAjout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAjout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAjout.Location = new System.Drawing.Point(982, 509);
+            this.btnAjout.Location = new System.Drawing.Point(992, 521);
             this.btnAjout.Name = "btnAjout";
             this.btnAjout.Size = new System.Drawing.Size(165, 92);
             this.btnAjout.TabIndex = 10;
