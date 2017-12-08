@@ -25,8 +25,10 @@ namespace BrickJutsu
             System.Threading.Thread monthread = new System.Threading.Thread(new System.Threading.ThreadStart(jouer));
             monthread.Start();
             this.Close();
+
             Joueur j = new Joueur(Joueur.ToString());
             Joueur j1 = new Joueur(Joueur1.ToString());
+
             if (this.nbJ1 > this.nbJ2)
             {
                 MessageBox.Show(j + " commence la partie ! ");
@@ -57,17 +59,17 @@ namespace BrickJutsu
         private void button3_Click(object sender, EventArgs e)
         {
             Random alea = new Random();
-            int dé1 = alea.Next(1, 7);
-            resultatj1.Text = dé1.ToString();
-            this.nbJ1 = dé1;
+            int de1 = alea.Next(1, 7);
+            resultatj1.Text = de1.ToString();
+            this.nbJ1 = de1;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             Random alea = new Random();
-            int dé2 = alea.Next(1, 7);
-            resultatj2.Text = dé2.ToString();
-            this.nbJ2 = dé2;
+            int de2 = alea.Next(1, 7);
+            resultatj2.Text = de2.ToString();
+            this.nbJ2 = de2;
         }
     }
 }
