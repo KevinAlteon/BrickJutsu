@@ -13,7 +13,7 @@ namespace BrickJutsu
         #endregion
 
         #region CONSTRUCTEUR 
-        public Vehicule(string uneDescription, int unNumero, string unNom) : base (unNumero, unNom)
+        public Vehicule(string uneDescription, string unNumero, string unNom) : base (unNumero, unNom)
         {
             this.descritpion = uneDescription;
         }

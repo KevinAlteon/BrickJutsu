@@ -50,8 +50,7 @@ namespace BrickJutsu
             {
                 this.Close();
             }
-            
+
         }
     }
 }
-
