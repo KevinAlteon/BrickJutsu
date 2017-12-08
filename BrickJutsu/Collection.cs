@@ -50,7 +50,7 @@ namespace BrickJutsu
             }
         }
 
-        internal List<Carte> LesCartes
+        public List<Carte> LesCartes
         {
             get
             {

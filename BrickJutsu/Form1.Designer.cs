@@ -80,14 +80,14 @@
             // 
             // voirCartes2
             // 
-            this.voirCartes2.Location = new System.Drawing.Point(499, 103);
+            this.voirCartes2.Location = new System.Drawing.Point(386, 103);
             this.voirCartes2.Margin = new System.Windows.Forms.Padding(2);
             this.voirCartes2.Name = "voirCartes2";
             this.voirCartes2.Size = new System.Drawing.Size(98, 41);
             this.voirCartes2.TabIndex = 4;
             this.voirCartes2.Text = "Voir les cartes";
             this.voirCartes2.UseSelectable = true;
-            //this.voirCartes2.Click += new System.EventHandler(this.voirCartes2_Click);
+            this.voirCartes2.Click += new System.EventHandler(this.voirCartes2_Click);
             // 
             // VoirLesCartes
             // 
