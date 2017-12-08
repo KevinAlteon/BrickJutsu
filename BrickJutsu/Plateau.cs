@@ -16,33 +16,33 @@ namespace BrickJutsu
         public Plateau()
         {
             InitializeComponent();
-            //lc = new List<Carte>();
-            //Personnage p  = new Personnage(1, "Hugo", 11,11,11,11);
-            //lc.Add(p);
-            //Personnage p1 = new Personnage(2, "Elodie", 15, 10, 10, 1);
-            //lc.Add(p1);
-            //Personnage p2 = new Personnage(3, "Kevin", 5, 10, 10, 5);
-            //lc.Add(p2);
-            //Personnage p3 = new Personnage(4, "autruche", 1, 10, 10, 5);
-            //lc.Add(p3);
-            //Personnage p4 = new Personnage(5, "poissonchat", 2, 10, 10, 5);
-            //lc.Add(p4);
-            //Personnage p5 = new Personnage(6, "citrouille", 3, 10, 10, 5);
-            //lc.Add(p5);
-            //Personnage p6 = new Personnage(7, "barbier", 4, 10, 10, 5);
-            //lc.Add(p6);
-            //Personnage p7 = new Personnage(8, "limier", 5, 10, 10, 5);
-            //lc.Add(p7);
-            //Personnage p8 = new Personnage(9, "Zane", 6, 10, 10, 5);
-            //lc.Add(p8);
-            //Personnage p9 = new Personnage(10, "Lloyd", 6, 10, 10, 5);
-            //lc.Add(p9);
-            //Personnage p10 = new Personnage(11, "limier", 3, 10, 10, 5);
-            //lc.Add(p10);
-            //Personnage p11 = new Personnage(12, "Cole", 2, 10, 10, 5);
-            //lc.Add(p11);
-            //Personnage p12 = new Personnage(13, "Kai", 1, 10, 10, 5);
-            //lc.Add(p12);
+            lc = new List<Carte>();
+            Personnage p  = new Personnage("1", "Hugo", 11,11,11,11);
+            lc.Add(p);
+            Personnage p1 = new Personnage("2", "Elodie", 15, 10, 10, 1);
+            lc.Add(p1);
+            Personnage p2 = new Personnage("3", "Kevin", 5, 10, 10, 5);
+            lc.Add(p2);
+            Personnage p3 = new Personnage("4", "autruche", 1, 10, 10, 5);
+            lc.Add(p3);
+            Personnage p4 = new Personnage("5", "poissonchat", 2, 10, 10, 5);
+            lc.Add(p4);
+            Personnage p5 = new Personnage("6", "citrouille", 3, 10, 10, 5);
+            lc.Add(p5);
+            Personnage p6 = new Personnage("7", "barbier", 4, 10, 10, 5);
+            lc.Add(p6);
+            Personnage p7 = new Personnage("8", "Ezio", 5, 10, 10, 5);
+            lc.Add(p7);
+            Personnage p8 = new Personnage("9", "Zane", 6, 10, 10, 5);
+            lc.Add(p8);
+            Personnage p9 = new Personnage("10", "Lloyd", 6, 10, 10, 5);
+            lc.Add(p9);
+            Personnage p10 = new Personnage("11", "limier", 3, 10, 10, 5);
+            lc.Add(p10);
+            Personnage p11 = new Personnage("12", "Cole", 2, 10, 10, 5);
+            lc.Add(p11);
+            Personnage p12 = new Personnage("13", "Kai", 1, 10, 10, 5);
+            lc.Add(p12);
 
         }
 

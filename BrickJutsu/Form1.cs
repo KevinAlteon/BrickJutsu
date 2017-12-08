@@ -44,11 +44,11 @@ namespace BrickJutsu
 
             foreach (var item in o) //pour chaque item dans le JSON
             {
-                lstBoxAllCartes.Items.Add(item["nom"].ToString());
                 if (item["type"].ToString() == "P")
                 {
                     maCollection.ajouterCarte(new Personnage(item["numero"].ToString(), item["nom"].ToString(), Convert.ToInt32(item["attaque"]), Convert.ToInt32(item["defense"]), Convert.ToInt32(item["force"]), Convert.ToInt32(item["vitesse"])));
                 }
+                MessageBox.Show("Succès. Les cartes sont téléchargées dans l'application.");
             }
             File.WriteAllText("persos.json", JsonConvert.SerializeObject(maCollection, Formatting.Indented));
         }
@@ -66,5 +66,13 @@ namespace BrickJutsu
             Application.Run(new Accueil());
         }
 
+        private void voirCartes2_Click(object sender, EventArgs e)
+        {
+            var mdr = JsonConvert.DeserializeObject<dynamic>(File.ReadAllText("persos.json"));
+            foreach (var item in mdr)
+            {
+                lstBoxAllCartes.Items.Add(item.Nom.ToString());
+            }
+        }
     }
 }
