@@ -30,6 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InstanceJoueur));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Relancer = new System.Windows.Forms.Button();
+            this.resultatj2 = new System.Windows.Forms.Label();
+            this.resultatj1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,15 +44,13 @@
             this.Joueurs = new MetroFramework.Controls.MetroTile();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.resultatj1 = new System.Windows.Forms.Label();
-            this.resultatj2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.Relancer);
             this.panel1.Controls.Add(this.resultatj2);
             this.panel1.Controls.Add(this.resultatj1);
             this.panel1.Controls.Add(this.label4);
@@ -61,10 +64,58 @@
             this.panel1.Controls.Add(this.Joueurs);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(1, 6);
+            this.panel1.Location = new System.Drawing.Point(-4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(870, 500);
+            this.panel1.Size = new System.Drawing.Size(875, 502);
             this.panel1.TabIndex = 0;
+            // 
+            // Relancer
+            // 
+            this.Relancer.Location = new System.Drawing.Point(368, 324);
+            this.Relancer.Name = "Relancer";
+            this.Relancer.Size = new System.Drawing.Size(75, 23);
+            this.Relancer.TabIndex = 13;
+            this.Relancer.Text = "Relancer";
+            this.Relancer.UseVisualStyleBackColor = true;
+            this.Relancer.Click += new System.EventHandler(this.Relancer_Click);
+            // 
+            // resultatj2
+            // 
+            this.resultatj2.AutoSize = true;
+            this.resultatj2.BackColor = System.Drawing.Color.Transparent;
+            this.resultatj2.Location = new System.Drawing.Point(591, 278);
+            this.resultatj2.Name = "resultatj2";
+            this.resultatj2.Size = new System.Drawing.Size(0, 13);
+            this.resultatj2.TabIndex = 12;
+            // 
+            // resultatj1
+            // 
+            this.resultatj1.AutoSize = true;
+            this.resultatj1.BackColor = System.Drawing.Color.Transparent;
+            this.resultatj1.Location = new System.Drawing.Point(125, 278);
+            this.resultatj1.Name = "resultatj1";
+            this.resultatj1.Size = new System.Drawing.Size(0, 13);
+            this.resultatj1.TabIndex = 11;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Location = new System.Drawing.Point(534, 278);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 13);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Nombre :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(65, 278);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Nombre : ";
             // 
             // button4
             // 
@@ -89,6 +140,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(65, 185);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(109, 13);
@@ -98,6 +150,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(534, 185);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 13);
@@ -121,10 +174,10 @@
             // Joueurs
             // 
             this.Joueurs.ActiveControl = null;
-            this.Joueurs.Location = new System.Drawing.Point(18, 18);
+            this.Joueurs.Location = new System.Drawing.Point(18, 20);
             this.Joueurs.Margin = new System.Windows.Forms.Padding(2);
             this.Joueurs.Name = "Joueurs";
-            this.Joueurs.Size = new System.Drawing.Size(844, 79);
+            this.Joueurs.Size = new System.Drawing.Size(844, 40);
             this.Joueurs.Style = MetroFramework.MetroColorStyle.Silver;
             this.Joueurs.TabIndex = 2;
             this.Joueurs.Text = "BrickJutsu - Joueurs";
@@ -149,40 +202,6 @@
             this.button1.Text = "Lancer la partie! ";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(65, 278);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Nombre : ";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(534, 278);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 13);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Nombre :";
-            // 
-            // resultatj1
-            // 
-            this.resultatj1.AutoSize = true;
-            this.resultatj1.Location = new System.Drawing.Point(125, 278);
-            this.resultatj1.Name = "resultatj1";
-            this.resultatj1.Size = new System.Drawing.Size(0, 13);
-            this.resultatj1.TabIndex = 11;
-            // 
-            // resultatj2
-            // 
-            this.resultatj2.AutoSize = true;
-            this.resultatj2.Location = new System.Drawing.Point(591, 278);
-            this.resultatj2.Name = "resultatj2";
-            this.resultatj2.Size = new System.Drawing.Size(0, 13);
-            this.resultatj2.TabIndex = 12;
             // 
             // InstanceJoueur
             // 
@@ -217,5 +236,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label resultatj2;
         private System.Windows.Forms.Label resultatj1;
+        private System.Windows.Forms.Button Relancer;
     }
 }
