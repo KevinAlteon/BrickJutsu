@@ -10,14 +10,12 @@ namespace BrickJutsu
     {
         #region ATTRIBUTS
         string nom;
-        string prenom;
         #endregion
 
         #region CONSTRUCTEUR
-        public Joueur(string unNom, string unPrenom)
+        public Joueur(string unNom)
         {
             this.nom = unNom;
-            this.prenom = unPrenom;
         }
         #endregion
 
@@ -35,18 +33,6 @@ namespace BrickJutsu
             }
         }
 
-        public string Prenom
-        {
-            get
-            {
-                return prenom;
-            }
-
-            set
-            {
-                prenom = value;
-            }
-        }
         #endregion
     }
 }

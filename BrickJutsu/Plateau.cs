@@ -17,11 +17,11 @@ namespace BrickJutsu
         {
             InitializeComponent();
             lc = new List<Carte>();
-            Personnage p  = new Personnage(1, "hugo", 11,11,11,11);
+            Personnage p  = new Personnage(1, "Hugo", 11,11,11,11);
             lc.Add(p);
-            Personnage p1 = new Personnage(2, "elodie", 15, 10, 10, 1);
+            Personnage p1 = new Personnage(2, "Elodie", 15, 10, 10, 1);
             lc.Add(p1);
-            Personnage p2 = new Personnage(3, "kevin", 5, 10, 10, 5);
+            Personnage p2 = new Personnage(3, "Kevin", 5, 10, 10, 5);
             lc.Add(p2);
             Personnage p3 = new Personnage(4, "autruche", 1, 10, 10, 5);
             lc.Add(p3);
@@ -33,6 +33,16 @@ namespace BrickJutsu
             lc.Add(p6);
             Personnage p7 = new Personnage(8, "limier", 5, 10, 10, 5);
             lc.Add(p7);
+            Personnage p8 = new Personnage(9, "Zane", 6, 10, 10, 5);
+            lc.Add(p8);
+            Personnage p9 = new Personnage(10, "Lloyd", 6, 10, 10, 5);
+            lc.Add(p9);
+            Personnage p10 = new Personnage(11, "limier", 3, 10, 10, 5);
+            lc.Add(p10);
+            Personnage p11 = new Personnage(12, "Cole", 2, 10, 10, 5);
+            lc.Add(p11);
+            Personnage p12 = new Personnage(13, "Kai", 1, 10, 10, 5);
+            lc.Add(p12);
 
         }
 
@@ -59,9 +69,7 @@ namespace BrickJutsu
                     break;
                 }
             }
-
-         
-            b.Text = carteChoisie;
+             b.Text = carteChoisie;
             
         }
 
@@ -80,26 +88,25 @@ namespace BrickJutsu
 
 
         //commencer le tour
-        private void button13_Click(object sender, EventArgs e)
+        private void CommencerTour_Click(object sender, EventArgs e)
         {
-            button10.Show();
+            TerminerTour.Show();
             Main.Show();
-            button13.Hide();
-            button14.Hide();
-
+            CommencerTour.Hide();
+            DebutPartie.Hide();
         }
 
         //terminer le tour
-        private void button10_Click(object sender, EventArgs e)
+        private void TerminerTour_Click(object sender, EventArgs e)
         {
-            button10.Hide();
+            TerminerTour.Hide();
             Main.Hide();
-            button13.Show();
-            button14.Hide();
+            CommencerTour.Show();
+            DebutPartie.Hide();
         }
         
         //Piocher
-        private void button12_Click(object sender, EventArgs e)
+        private void Piocher_Click(object sender, EventArgs e)
         {
             Random ra = new Random();
             foreach (RadioButton rdo in Main.Controls.OfType<RadioButton>())
@@ -113,10 +120,10 @@ namespace BrickJutsu
         }
 
         //Défausser
-        private void button11_Click(object sender, EventArgs e)
+        private void Défausser_Click(object sender, EventArgs e)
         {
             string carteChoisie = "";
-            Button b = button11;
+            Button b = Défausser;
             foreach (RadioButton rdo in Main.Controls.OfType<RadioButton>())
             {
                 if (rdo.Checked)
@@ -131,12 +138,12 @@ namespace BrickJutsu
         }
        
         //Début de partie 
-        private void button14_Click(object sender, EventArgs e)
+        private void DebutPartie_Click(object sender, EventArgs e)
         {
-            button10.Show();
+            TerminerTour.Show();
             Main.Show();
-            button13.Show();
-            button14.Hide();
+            CommencerTour.Show();
+            DebutPartie.Hide();
 
             Random r = new Random();
             int count = 0;
@@ -149,5 +156,6 @@ namespace BrickJutsu
                      }
              }
         }
+
     }
 }
